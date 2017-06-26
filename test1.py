@@ -18,13 +18,24 @@
 
 
 
-while True:
-  print('Who are you?')
-  name = raw_input()
-  if name != 'Joe':       #(1)
-    continue              #(2)
-  print('Hello, Joe. What is the password? (It is a fish.)') 
-  password = raw_input()      #(3)
-  if password == 'swordfish':
-    break                 #(4)
-print('Access granted.')  #(5)
+# while True:
+#   print('Who are you?')
+#   name = raw_input()
+#   if name != 'Joe':       #(1)
+#     continue              #(2)
+#   print('Hello, Joe. What is the password? (It is a fish.)') 
+#   password = raw_input()      #(3)
+#   if password == 'swordfish':
+#     break                 #(4)
+# print('Access granted.')  #(5)
+
+
+name = ''
+while not name: #(1)
+    print('Enter your name:')
+    name = raw_input()
+print('How many guests will you have?')
+numOfGuests = int(input())
+if numOfGuests: #(2)
+    print('Be sure to have enough room for all your guests.') #(3)
+print('Done')
